@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+        body {
+            display: grid;
+            grid-template-columns: 200px 800px;
+            grid-template-rows: 20% 80%;
+            grid-template-areas: "nav nav"
+                                 "main side"
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: lightcoral;
+            grid-area: nav;
+        }
+
+        h1 {
+            color: navy;
+            text-transform: uppercase;
+        }
+
+        .tabs {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .tabs li {
+            
+            width: 100px;
+        }
+
+        main {
+            width: 80%;
+            height: 50vh;
+            background-color: aqua;
+            grid-area: main;
+        }
+
+        main pre {
+            text-align: center;
+        }
+
+        main p {
+            text-align: center;
+        }
+
+        aside {
+            width: 20%;
+            height: 50vh;
+            background-color: lightblue;
+            grid-area: side;
+        }
+
+        aside pre {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Niyotek</h1>
+
+        <ul class="tabs">
+            <li>Home</li>
+            <li>About us</li>
+            <li>Contact us</li>
+            <li>Portfolio</li>
+        </ul>
+    </nav>
+
+    <main>
+        <center><h2>This is the main content</h2></center>
+        <pre>this is where we have the main content of the page </pre>
+        <p>this will work with the use of flexbox and grid</p>
+
+    </main>
+
+    <aside>
+        <center><h2>This is an aside bar</h2></center>
+        <pre>This is where we have other<br> important content which <br>can be a side nav or some <br>other important content</pre>
+    </aside>
+
+</body>
+</html>
